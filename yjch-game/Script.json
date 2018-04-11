@@ -236,7 +236,7 @@
 
     "scene Blackscreen",
     "show a Normal right fadeIn",
-  	"anormal Wake up, we need to go, if we are going to get there on time!!",
+  	"a  Wake up, we need to go, if we are going to get there on time!!",
 
 
     "scene house",
@@ -278,9 +278,28 @@
 	],
 
 "Shoot": [
-  "scene mountain",
+  "scene Mountain",
   "show j Mad right fadeIn",
   "j Oh no it got away, I shoot to early.",
+
+  "scene Mountain",
+  "show a Mad right fadeIn",
+  "a See, I told you to have a clear shoot, Listen to me next time!!",
+
+  "scene Mountain",
+  "show j Mad right fadeIn",
+  "j I do that next time, what do we do next?",
+
+  "scene Mountain",
+  "show a Normal",
+  "a We got to go to a different location because if there was any deer near, they are now long gone.",
+
+  "scene Blackscreen",
+  "2 hours later",
+
+
+
+
 
 
 
