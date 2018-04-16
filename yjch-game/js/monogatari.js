@@ -654,7 +654,7 @@ $_ready(function() {
 			if (typeof voice == 'object') {
 				assetCount += Object.keys(voice).length;
 				for (var i in voice) {
-					preloadPromises.push(preloadAudio("audio/music/voice" + voice[i]));
+					preloadPromises.push(preloadAudio("audio/voice/" + voice[i]));
 				}
 			}
 

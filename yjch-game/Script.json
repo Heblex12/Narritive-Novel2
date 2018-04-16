@@ -6,6 +6,12 @@
       "Message": "<p><a href='http://monogatari.hyuchia.com/documentation/'>Documentation</a> - Everything you need to know.</p><p><a href='http://monogatari.hyuchia.com/demo/'>Demo</a> - A simple Demo.</p>"
     }
   },
+ "notifications":{
+	"Welcome": {
+	"title": "Welcome",
+	"body": "This is an interactive story",
+		"icon": ""	}
+},
   "particles": {
     "universe": {
       "particles": {
@@ -260,10 +266,12 @@
 
     "scene Mountain",
     "show a Normal right fadeIn",
-    "play sound Forest",
+    "play sound Nature",
     "a Take a breath and focus the scope then shoot.",
+    "play music choice",
 
 		{"Choice": {
+
 				"Dialog": "What are you going to do?",
 				"Shoot": {
 					"Text": "Shoot right away!!",
@@ -279,12 +287,16 @@
 
 "Shoot": [
   "scene Mountain",
+  "stop music",
+  "stop sound",
+  "particles Snow",
   "show j Mad right fadeIn",
   "j Oh no it got away, I shoot to early.",
 
   "scene Mountain",
   "show a Mad right fadeIn",
   "a See, I told you to have a clear shoot, Listen to me next time!!",
+
 
   "scene Mountain",
   "show j Mad right fadeIn",
@@ -297,12 +309,30 @@
   "scene Blackscreen",
   "2 hours later",
 
+  "scene Mountain",
+  "show j Mad right fadeIn",
+  "Ok, let go then I am getting hungry. Looks like you scare all the animals in the area. good job.",
 
+  "scene Blackscreen",
+  "1 hour and 30 minutes later",
 
+  "scene Home",
+  "show l Serious left fadeIn",
+  "l You didn't get anything, I had a feeling this might happen so I prepare you some food.",
 
+  "scene Home",
+  "show j Sad right fadeIn",
+  "j Aaaah beans again, You know what I am so hungry and tire that this are delicious, but deer would have been great.",
 
+  {"Choice": {
 
-
+      "Dialog": "Click contine..",
+      "Shoot": {
+        "Text": "Continue",
+        "Do": "jump Afternoon"
+      }
+    }
+  }
 
 
 ],
@@ -312,81 +342,175 @@
 	"Yes!!,  It looks like I got it."
 ],
 
+"Afternoon": [
+  "scene Blackscreen",
+  "After we finish eating a great meal we all seated down to admire the fresh humit wind blowing and nice shade as the sun goes down.",
 
-//		"a Be silent, approach as silently as possible.",
-//		"show j Normal left fadeIn",
-//		"j I got one in my scope.",
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound Nature",
+  "l You know I went to see you Grandma Licinda and she told me your parents called. They told her that they will soon have enough money to bring you to the United States.",
 
-//		"a Take a breath and focus the scope then shoot.",
-//		"a See, I told you to have a clear shoot, Listen to me next time!! ",
-//		"j I will do that next time, what do we do next?",
-//		"a We got to go to a different location because if they was any deer near, now they are long gone.",
-//		"j Ok, let go then I am getting hungry",
-//		"2 hours later",
-//		"a Let go home, it doesn’t look we will any, you scare them away.",
+  "scene Home",
+  "show j Normal right fadeIn",
+  "play sound Nature",
+  "j I am very happy that I will finally be able to see them soon, but at the same time I feel very sad because I will leave you behind grandma. Once I leave I won't be able to see you ever again grandma.",
 
-		//Thoughts:  (“I felt really bad for ruining our chances at getting the deer, because of my impatience.”)
+  "scene Home",
+  "show l right fadeIn",
+  "play sound Nature",
+  "l I know you don't want to leave me behind, but you must it getting dangerous here everyday. We are living in a place without any laws or law enforment. Everyone can do whatever they want without any punishment.",
 
-//		"j OK",
+  "scene Home",
+  "show l right fadeIn",
+  "play sound Nature",
+  "l You never got to meet your Uncle because he was killed before you were born. I don't want that to happen to you.In the U.S you will be able to have a better eductation, which you can't have here because our Highest level of education is middle school in the U.S",
 
-	//	"1 hour later",
-	//	"scene Home",
-		// grandma dissapointed
-//		"l You didn’t get anything, I had a feeling this might happen so I prepare you some food.",
-		//j and a
-//		"Aaah beans again, You know what I so hungry and tire that this are delicious, but deer would have been great.",
+  "scene Home",
+  "show j right fadeIn",
+  "play sound Nature",
+  "j Ok, ok I get it, it just sucks that I must leave. I love the enviroment here and once I leave I will probability never be able to see it again.",
 
-		//If shoot right away
-//		"scene Mountain",
-//		"j Yes!! It looks like I got it",
-//		"a Nice, we are going to eat great tonight.",
-//		"j Let go get it.",
-//		"a Be careful don’t get to close!!",
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound nature",
+  "l Go prepare some wood it getting dark already.",
 
-		// choice "be careful dont get too close", "get a closer look"
-//		"j It ok, it dead already",
-//		"j Aaah, aah, aah.",
-//		"a I told you not get close, when deer are dying there at their strongest.",
-//		"a You know we can’t afford for any of us to get injured the closest clinic is 2 hours away And doctors is never there.",
-//		"j And the doctor it not there we would to drive to the city which takes about 3 hours. I know I am sorry. Live and Learn.",
-//		"a Alright, Let go you have be with pain, so you can learn from your mistakes it will heal with time.",
-//		"At home.",
-//		"What happened to you?",
-//		"j I got kick the deer, but though ARIEL told not get close I still did.",
-//		"l This why listen to your cousin he has more experience. We pour alcohol and disinfectant and you will be fine. Any great hunt -- get to cook that deer. We will have food for days to come.",
-//		"j Ok, I wait make sure it dead.",
-//		"l Alright, help me carry it home.",
-//		"Great jobs, we got us food for days. Let get started on the preparation, I send some food to your other cousin too. ",
+  "scene Blackscreen",
+  "In the morning there was a helicopter flying over Javier house, It was pretty low to the ground.",
 
-		//new scene
-//		"After finish eating a great meal, all seats down to admire the fresh humit wind blowing and nice shade as the sun goes down.",
-//		"l You know I went to see you Grandma Lucinda and she told your parent called They told her they will soon have enough money to bring you to the United States.",
-//		"j doesn’t usually show any emotion, but at this moment he began which show How much he cares for his grandmother.",
-//		"You I am very happy that I finally be able to see them soon, but at the same time I feel very sad because I will leave you behind grandma. Once I leave I won’t be able to see you ever again grandma. (Tears behind to fall.) ",
+  "scene Home",
+  "show j Normal right fadeIn",
+  "play sound helicopter",
+  "j Grandma why is the helicopter flying so low today?",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound helicopter",
+  "l It probability looking for member of the cartel or those people that sell or Buy drugs. They have been a steady increase of cartel influence around here recently and government knows it. So they usually send Helicopters or soldiers to patrol.",
+
+  "scene Home",
+  "show j Normal right fadeIn",
+  "play sound helicopter",
+  "oh makes sense",
+
+  "scene Blackscreen",
+  "play sound River",
+  "30 minutes later",
+
+  "scene Home",
+  "show j Normal right fadeIn",
+  "play sound River",
+  "That strange those guys are a big hurry",
+
+  "scene Home",
+  "show l Normal right fadeIn",
+  "play sound River",
+  "l Probability who the helicopter was looking for, it best not to get Involt, don’t go near the river for at least an hour just in case there more people.",
+
+  "scene Blackscreen",
+  "play sound River",
+  "15 minutes later.",
+
+  "scene Home",
+  "play sound River",
+  "A group of soldier arrive",
+
+  "scene Home",
+  "show S normal right fadeIn",
+  "play sound River",
+  "Hello, there young man have you seen a group of man pass by here running?",
+
+  {"Choice": {
+
+      "Dialog": "What are you going to do?",
+      "Shoot": {
+        "Text": "Yes, I did there were running by a few minutes ago.",
+        "Do": "jump Yes-Running"
+      },
+      "Wait": {
+        "Text": "No, I didn't see anyone go by",
+        "Do": "jump Saw-Nothing"
+      }
+    }
+  }
 
 
 
 
+],
+
+"Yes-Running": [
+  "scene Home",
+  "show s normal right fadeIn",
+  "play sound re-group",
+  "s Thanks, Everyone let head out before they get away, Move Move!!!"
+
+],
+"Saw-Nothing": [
+  "scene Home",
+  "show s normal right fadeIn",
+  "play sound footsteps",
+  "s Ok, we found nothing seem you are telling the truth, Now be a good boy and take care of your grandma. Bye.",
+
+  "scene Home",
+  "show j normal left fadeIn",
+  "j Later that night I went up to my favorite rock and completed about What has happen until now. I came to the conclusion that I don’t want to leave Mexico, but I want to see my parents soon. And it would be the best for to leave it would provide me with a better future.",
+
+  "scene Blackscreen",
+  "Next Day - A beatiful morning with the sun shining bright.",
+
+  "scene Home",
+  "show l normal left fadeIn",
+  "play sound river",
+  "I have to go to the city to talk your parent since we don’t have any phone near us. I will be gone for a few day, I will leave and you will be staying with your cousin.I will return as soon as I can.",
+
+"scene Home",
+"show j normal right fadeIn",
+"play sound river",
+"Ok, we should be fine just glad I am not staying alone.",
+
+"scene Blackscreen",
+"Next Day",
+
+"scene Home",
+"show a normal left fadeIn",
+"play sound river",
+"JAVIER I need to go to work into town today, I don’t want time I will return. Will you be ok by yourself?",
+
+"scene Home",
+"show j normal left fadeIn",
+"play sound footsteps",
+"I should be fine, just try to return before it get Dark.",
+
+"scene Home",
+"show a normal left fadeIn",
+"I will try can't promise anything. I let food for you, you should be fine.",
+
+"scene Home",
+"show j normal right fadeIn",
+"ARIEL left JAVIER alone while he went to work, JAVIER run out of food by the middle of the day. At this point he decided to go fishing.",
+
+"scene River",
+"show j normal right fadeIn",
+"Middle of Day -  I look for the best place where I could find fish and dive under water, I got a few fishes and I went back home and cooked them myself. This was the first time I was cooking for myself, but I had watch my grandma do it, so I was able to get it done. This would provide me with food for at least this day and the next",
+
+"scene House",
+"5:30 PM -  “The shadows then started reaching my house which was the sign that it was close to night, I then went to the forest nearby and cut some wood so that I would have some fire in the night so I could make dinner and have light. After I got home with the wood I made a fire and ate, I then waited for my cousin for a few hours, but no sign of him. At about 9:00 PM I heard wolves howling in the distance this made me uncomfortable because I didn’t want to them to get near my house. I then turned off the fire and headed to my room and started a fire in there and let it burn until I went to sleep”",
+
+"scene Home",
+"show j normal left fadeIn",
+"j I am so glad you are back, I am hungry.",
+
+"scene Home",
+"show l happy right fadeIn",
+"l Glad to be back",
+
+"scene Blackscreen",
+"To be Continue......"
 
 
-
-//		{"Choice":{
-//			"Dialog": "What are you going to do? ",
-//			"Shoot": {
-//				"Text": "Shoot right away!!",
-//				"Do": "jump Shoot"
-//			},
-//			"Wait": {
-//				"Text": "Wait to have clear shoot",
-//				"Do": "jump Shoot"
-//			}
-//		}
-//	}
-
-
-
-//Important  ],
-
+],
 
 	"No": [
 
