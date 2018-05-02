@@ -53,8 +53,10 @@ loadJSON(function(response) {
 */
 $.getJSON("Script.json", function(json) {
     console.log(Script.json); // this will show the info it in firebug console
+  console.log("script.js test");
 
 });
+
 
 
 var globalVar;

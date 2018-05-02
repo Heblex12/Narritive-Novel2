@@ -138,7 +138,7 @@
 			</div>
 		</div>
 		<ul data-ui="quick-menu" class="align-right dark">
-			<span class="fa fa-arrow-left" data-action="back"></span>
+			<span id="back" class="fa fa-arrow-left" data-action="back"></span>
 			<span class="fa fa-eye" data-action="distraction-free"></span>
 			<span class="fa fa-save" data-action="open-menu" data-open="save"></span>
 			<span class="fa fa-undo" data-action="open-menu" data-open="load"></span>
@@ -169,13 +169,18 @@
 	<!-- Main Screen -->
 	<section data-menu="main" id="page">
 
-		<div class="logo" data-background="img/ui/stars.gif">
-		<img src ="img/ui/ourjourney.png" style="width:50%; height:25%;"/>
+		<div class="logo" data-background="img/scenes/Cerro.png" style="width:100%; height:auto;">
+		<img src ="img/ui/Wolf.png" style="width:55%; height:auto;"/>
+		<audio src="audio/music/Choice.mp3" autoplay loop>
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+<embed src="/music/good_enough.mp3" width="180" height="90" hidden="true"/>
+</audio>
 		<span class="vertical align-right animated bounceIn" id="top" >
 				<button data-action="start" data-string="Start">Start</button>
 				<button data-action="open-menu" data-open="load" data-string="Load">Load</button>
 				<button data-action="open-menu" data-open="settings" data-string="Settings">Settings</button>
 				<button data-action="open-menu" data-open="help" data-string="Help">Help</button>
+				<button class="Home"><a href="students.washington.edu/yjg/YJCHProject/map/">Home</a></botton>
 				</span>
 
 

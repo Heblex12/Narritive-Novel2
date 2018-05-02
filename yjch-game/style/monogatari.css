@@ -422,6 +422,9 @@ textarea {
 	color: rgba(255, 0, 0, 0.5);
 	cursor: pointer;
 }
+#back{
+	display: none;
+}
 
 [data-ui="quick-menu"].dark span:hover {
 	color: rgba(255, 0, 0, 0.5);
