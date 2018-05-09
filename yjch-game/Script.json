@@ -174,8 +174,12 @@
   "images": {},
   "scenes": {
     "Main": "ourjourney.png",
+    "Fin-Red":"Fin-red.png",
+    "Fin-Blue": "Fin-Blue.png",
+    "Lado": "Lado.png",
     "Home": "Home.png",
     "City": "City.png",
+    "Eyes": "Eyes.png",
     "Airport":"Airport.png",
     "AZ-H-V": "Arizona-House-V.png",
     "AZ-H":"Arizona-House.png",
@@ -242,9 +246,9 @@
   "script": {
 
 	"Start": [
-		"scene Blackscreen",
+		"scene Lado",
 		"notify Welcome",
-		"Welcome to Our Journey",
+		"Welcome to our journey",
 
 
 		{"Choice": {
@@ -271,7 +275,7 @@
     "scene Home",
     "play sound Nature",
     "show j Normal Right fadeIn",
-    "j Normal  Ok, Ok, I am awake ready to go.",
+    "j Ok, Ok, I am awake ready to go.",
 
 
     "scene blackscreen",
@@ -290,7 +294,7 @@
     "scene Deer",
     "show a Normal right fadeIn",
     "play sound Nature",
-    "a Take a breath and focus the scope then shoot.",
+    "a Take a breath and focus the scope then take the shoot.",
     "play music choice",
 
 		{"Choice": {
@@ -301,7 +305,7 @@
 					"Do": "jump Shoot"
 				},
 				"Wait": {
-					"Text": "Wait to have clear shoot.",
+					"Text": "Wait to have clear shot.",
 					"Do": "jump Wait"
 				}
 			}
@@ -314,16 +318,16 @@
   "stop sound",
   "particles Snow",
   "show j Mad right fadeIn",
-  "j Oh no it got away, I shoot to early.",
+  "j Oh no it got away, I shot to early.",
 
   "scene Mountain",
   "show a Mad right fadeIn",
-  "a See, I told you to have a clear shoot, Listen to me next time!!",
+  "a See, I told you to have a clear shot, listen to me next time!!",
 
 
   "scene Mountain",
   "show j Mad right fadeIn",
-  "j I do that next time, what do we do next?",
+  "j I will do that next time, what do we do next?",
 
   "scene Mountain",
   "show a Normal",
@@ -334,7 +338,7 @@
 
   "scene Mountain",
   "show j Mad right fadeIn",
-  "Ok, let go then I am getting hungry. Looks like you scare all the animals in the area. good job.",
+  "Ok, let go then, I am getting hungry. Looks like you scare all the animals in the area. good job.",
 
   "scene Blackscreen",
   "1 hour and 30 minutes later",
@@ -362,20 +366,20 @@
 "Wait": [
  	"scene Mountain",
 	"show j Normal right fadeIn",
-	"Yes!!,  It looks like I got it.",
+	"j Yes!!,  It looks like I got it.",
 
 
   "scene Forest",
   "show a Normal right fadeIn",
-  "Nice, we are going to eat great tonight",
+  "a Nice, we are going to eat well tonight",
 
   "scene Forest",
   "show j Normal right fadeIn",
-  "Let go get it. - runs towards deer.",
+  "j Let's go get it. - runs towards deer.",
 
   "scene Forest",
-  "show a normal right fadeIn",
-  "a Be careful don't get close!!",
+  "show a Normal right fadeIn",
+  "a Be careful!!",
 
   {"Choice": {
 
@@ -396,7 +400,7 @@
 "Get-Closer": [
   "scene Forest",
   "show j right fadeIn",
-  "It fine, it dead already",
+  "j It fine, it dead already",
 
   "scene Blackscreen",
   "with it dying breath it kick JAVIER in one hands as he jump back. His hand is left bloody with skin peel because the force of the kick was that strong.",
@@ -407,15 +411,15 @@
 
   "scene Forest",
   "show a Normal right fadeIn",
-  "I told you not to get close, when deer are dying they are at their strongest. You know we cant afford for any of us to get injured the closest clinic is 2 hours away. And the doctors is never there.",
+  "a I told you not to get close, when deer are dying they are at their strongest. You know we cant afford for any of us to get injured the closest clinic is 2 hours away. And the doctors is never there.",
 
   "scene Forest",
   "show j Normal right fadeIn",
-  "And if the doctor is not there we would have to drive to the city which takes about 3 hours. I know I am sorry.",
+  "j And if the doctor is not there we would have to drive to the city which takes about 3 hours. I know I am sorry.",
 
   "scene Forest",
   "show a Normal right fadeIn",
-  "Alright, let go you have to learn from your pain. So you learn from your mistakes it will heal with time.",
+  "a Alright, let's go you have to learn from your pain. So you learn from your mistakes it will heal with time.",
 
   "scene Blackscreen",
   "About 2 hours later | They arrive at their house.",
@@ -433,7 +437,7 @@
 "Be-Careful": [
   "scene Forest",
   "show j Normal right fadeIn",
-  "Ok, I will wait to make sure it dead.",
+  "j Ok, I will make sure it's dead.",
 
   "scene Forest",
   "show a Normal right fadeIn",
@@ -443,7 +447,8 @@
   "About 1 hour and 30 min later | They arrive at their house.",
 
   "scene Home",
-  "Great job, we will have food for days. Let get started on the preparation, I will send some food to your other cousin too.",
+  "show l Normal right fadeIn",
+  "l Great job, we will have food for days. Let's get started on the preparation, I will send some food to your other cousin too.",
 
   {"Choice": {
 
@@ -462,7 +467,7 @@
 
   "scene Home",
   "show j Normal right fadeIn",
-  "j I made a mistake and I got close to the deer before it die and it almost killed me with a kick.",
+  "j I made a mistake and I got to close to the deer before it die and it almost killed me with a kick.",
 
   "scene Home",
   "show l Normal right fadeIn",
@@ -470,58 +475,58 @@
 
   "scene Home",
   "show l Normal left fadeIn",
-  "l Ariel go ahead and start on the preparation I will join I as soon as I am done treating him.",
+  "l Ariel go ahead and start on the preparation I will join you as soon as I am done treating him.",
 
   "scene Blackscreen",
-  "After we finish eating a great meal we all seated down to admire the fresh humit wind blowing and nice shade as the sun goes down.",
+  "After we finished eating a great meal we sat down to admire the fresh humid wind blowing and nice shade as the sun went down.",
 
   "scene Home",
   "show l Normal right fadeIn",
   "play sound Nature",
-  "l You know I went to see you Grandma Licinda and she told me your parents called. They told her that they will soon have enough money to bring you to the United States.",
+  "l You know, I went to see your grandma Licinda and she told me your parents called. They told her that they will soon have enough money to bring you to the united status.",
 
   "scene Home",
   "show j Normal right fadeIn",
   "play sound Nature",
-  "j I am very happy that I will finally be able to see them soon, but at the same time I feel very sad because I will leave you behind grandma. Once I leave I won't be able to see you ever again grandma.",
+  "j I am very happy that I will finally be able to see them soon, but at the same time, I feel very sad because I will leave you behind grandma. Once I leave, I won't be able to see you ever again grandma.",
 
   "scene Home",
-  "show l right fadeIn",
+  "show l Normal right fadeIn",
   "play sound Nature",
-  "l I know you don't want to leave me behind, but you must it getting dangerous here everyday. We are living in a place without any laws or law enforment. Everyone can do whatever they want without any punishment.",
+  "l You know, I went to see you grandma Licinda and she told me your parents called. They told her that they will soon have enough money to bring you to the United States.",
 
   "scene Home",
-  "show l right fadeIn",
+  "show l Normal",
   "play sound Nature",
-  "l You never got to meet your Uncle because he was killed before you were born. I don't want that to happen to you.In the U.S you will be able to have a better eductation, which you can't have here because our Highest level of education is middle school in the U.S",
+  "l You never got to meet your uncle because he was killed before you were born. I don't want that to happen to you.In the U.S you will be able to have a better eductation, which you can't have here because our Highest level of education is middle school in the U.S",
 
   "scene Home",
-  "show j right fadeIn",
+  "show j Sad right fadeIn",
   "play sound Nature",
-  "j Ok, ok I get it, it just sucks that I must leave. I love the enviroment here and once I leave I will probability never be able to see it again.",
+  "j Ok, ok I get it, it just sucks that I must leave. I love the enviroment here, and once I leave, I will probably never be able to see it again.",
 
   "scene Home",
   "show l Normal right fadeIn",
   "play sound nature",
-  "l Go prepare some wood it getting dark already.",
+  "l Go prepare some wood, it's getting dark already.",
 
   "scene Home-heli",
-  "In the morning there was a helicopter flying over Javier house, It was pretty low to the ground.",
+  "In the morning, there was a helicopter flying over Javier house, It was pretty low to the ground.",
 
   "scene Home-heli",
   "show j Normal right fadeIn",
   "play sound helicopter",
-  "j Grandma why is the helicopter flying so low today?",
+  "j Grandma, why is the helicopter flying so low today?",
 
   "scene Home",
   "show l Normal right fadeIn",
   "play sound helicopter",
-  "l It probability looking for member of the cartel or those people that sell or Buy drugs. They have been a steady increase of cartel influence around here recently and government knows it. So they usually send Helicopters or soldiers to patrol.",
+  "l It probably looking for member of the cartel or those people that sell or buy drugs. There has been a steady increase of cartel influence around here recently and government knows it. So they usually send helicopters or soldiers to patrol.",
 
   "scene Home",
   "show j Normal right fadeIn",
   "play sound helicopter",
-  "oh makes sense",
+  "oh, makes sense",
 
   "scene Blackscreen",
   "play sound River",
@@ -530,12 +535,12 @@
   "scene Home",
   "show j Normal right fadeIn",
   "play sound River",
-  "That strange those guys are a big hurry",
+  "it's strange that those guys are a big hurry",
 
   "scene Home",
   "show l Normal right fadeIn",
   "play sound River",
-  "l Probability who the helicopter was looking for, it best not to get Involt, don’t go near the river for at least an hour just in case there more people.",
+  "l Probably who the helicopter was looking for, it's best not to get involved, don’t go near the river for at least an hour just in case there are more people.",
 
   "scene Blackscreen",
   "play sound River",
@@ -543,12 +548,12 @@
 
   "scene Home",
   "play sound River",
-  "A group of soldier arrive",
+  "A group of soldiers arrive",
 
   "scene Home",
   "show sa Inter right fadeIn",
   "play sound River",
-  "sa Hello, there young man have you seen a group of man pass by here running?",
+  "sa Hello there young man, have you seen a group of men pass by here running?",
 
   {"Choice": {
 
@@ -571,55 +576,55 @@
 
 "Afternoon": [
   "scene Blackscreen",
-  "After we finish eating a great meal we all seated down to admire the fresh humit wind blowing and nice shade as the sun goes down.",
+  "After we finished eating a great meal we all sat down to admire the fresh humid wind blowing and nice shade as the sun went down.",
 
   "scene Home",
   "show l Normal right fadeIn",
   "play sound Nature",
-  "l You know I went to see you Grandma Licinda and she told me your parents called. They told her that they will soon have enough money to bring you to the United States.",
+  "l You know I went to see you Grandma, Licinda and she told me your parents called. They told her that they will soon have enough money to bring you to the United States.",
 
   "scene Home",
   "show j Normal right fadeIn",
   "play sound Nature",
-  "j I am very happy that I will finally be able to see them soon, but at the same time I feel very sad because I will leave you behind grandma. Once I leave I won't be able to see you ever again grandma.",
+  "j I am very happy that I will finally be able to see them soon, but at the same time, I feel very sad because I will leave you behind grandma. Once I leave, I won't be able to see you ever again grandma.",
 
   "scene Home",
-  "show l right fadeIn",
+  "show l Normal right fadeIn",
   "play sound Nature",
-  "l I know you don't want to leave me behind, but you must it getting dangerous here everyday. We are living in a place without any laws or law enforment. Everyone can do whatever they want without any punishment.",
+  "l I know you don't want to leave me behind, but you must do it because it's getting dangerous here everyday. We are living in a place without any laws or law enforcement. Everyone can do whatever they want without any punishment.",
 
   "scene Home",
-  "show l right fadeIn",
+  "show l Normal right fadeIn",
   "play sound Nature",
-  "l You never got to meet your Uncle because he was killed before you were born. I don't want that to happen to you.In the U.S you will be able to have a better eductation, which you can't have here because our Highest level of education is middle school in the U.S",
+  "l You never got to meet your uncle because he was killed before you were born. I don't want that to happen to you.In the u.s you will be able to have a better education, which you can't have here because our highest level of education is middle school level in the u.s.",
 
   "scene Home",
-  "show j right fadeIn",
+  "show j Sad right fadeIn",
   "play sound Nature",
-  "j Ok, ok I get it, it just sucks that I must leave. I love the enviroment here and once I leave I will probability never be able to see it again.",
+  "j Ok, ok I get it, it just sucks that I must leave. I love the enviroment here and once I leave, I will probably never be able to see it again.",
 
   "scene Home",
   "show l Normal right fadeIn",
   "play sound nature",
-  "l Go prepare some wood it getting dark already.",
+  "l Go prepare some wood, it getting dark already.",
 
   "scene Home-heli",
-  "In the morning there was a helicopter flying over Javier house, It was pretty low to the ground.",
+  "In the morning, there was a helicopter flying over Javier house, It was pretty low to the ground.",
 
   "scene Home-heli",
   "show j Normal right fadeIn",
   "play sound helicopter",
-  "j Grandma why is the helicopter flying so low today?",
+  "j Grandma, why is the helicopter flying so low today?",
 
   "scene Home",
   "show l Normal right fadeIn",
   "play sound helicopter",
-  "l It probability looking for member of the cartel or those people that sell or Buy drugs. They have been a steady increase of cartel influence around here recently and government knows it. So they usually send Helicopters or soldiers to patrol.",
+  "l It probably looking for members of the cartel or those people that sell or buy drugs. There has been a steady increase of cartel influence around here recently and government knows it. So they usually send helicopters or soldiers to patrol.",
 
   "scene Home",
   "show j Normal right fadeIn",
   "play sound helicopter",
-  "oh makes sense",
+  "oh, Makes sense",
 
   "scene Blackscreen",
   "play sound River",
@@ -628,12 +633,12 @@
   "scene Home",
   "show j Normal right fadeIn",
   "play sound River",
-  "That strange those guys are a big hurry",
+  "It's strange that those guys are a big hurry",
 
   "scene Home",
   "show l Normal right fadeIn",
   "play sound River",
-  "l Probability who the helicopter was looking for, it best not to get Involt, don’t go near the river for at least an hour just in case there more people.",
+  "l Probably who the helicopter was looking for, it best not to get involved, don’t go near the river for at least an hour just in case there are more people.",
 
   "scene Blackscreen",
   "play sound River",
@@ -641,12 +646,12 @@
 
   "scene Home",
   "play sound River",
-  "A group of soldier arrive",
+  "A group of soldiers arrive",
 
   "scene Home",
   "show sa Inter right fadeIn",
   "play sound River",
-  "sa Hello, there young man have you seen a group of man pass by here running?",
+  "sa Hello there young man, have you seen a group of man pass by here running?",
 
   {"Choice": {
 
@@ -674,26 +679,26 @@
   "sa Thanks, Everyone let head out before they get away, Move Move!!!",
 
   "scene Home",
-  "show j left fadeIn",
-  "Later that night I went up to my favorite rock and completed about What has happen until now. I came to the conclusion that I don’t want to leave Mexico, but I want to see my parents soon. And it would be the best for to leave it would provide me with a better future.",
+  "show j Mad left fadeIn",
+  "Later, that night I went up to my favorite rock and comtemplated what has happen until now. I came to the conclusion that I don’t want to leave Mexico, but I want to see my parents soon. And it would be the best for to leave, it would provide me with a better future.",
 
 "scene Blackscreen",
 "Next Day - A beatiful morning with the sun shinning bright.",
 
 "scene Home",
 "show l Normal left fadeIn",
-"l I have to go to the city to talk to your parents. Since we don't have any phone near us. I will be gone for a few days. You will be staying with your cousin. I will return as soon as I can.",
+"l I have to go to the city, to talk to your parents. Since we don't have any phone near us. I will be gone for a few days. You will be staying with your cousin. I will return as soon as I can.",
 
 "scene Home",
 "show j Normal right fadeIn",
-"Ok, we should be fine just glad I am not staying alone.",
+"j Ok, we should be fine just glad I am not staying alone.",
 
 "scene Blackscreen",
 "Next Day",
 
 "scene Home",
 "show a Normal right fadeIn",
-"Javier I need to go to work into town today. I don't know what time I will return. Will you be ok by yourself?",
+"a Javier, I need to go to work into town today. I don't know what time I will return. Will you be ok by yourself?",
 
 "scene Home",
 "show j Normal right fadeIn",
@@ -701,7 +706,7 @@
 
 "scene Home",
 "show a Normal right fadeIn",
-"a I will try can't promise anything. I left you food for you should be fine.",
+"a I will try can't promise anything. I left food for you, you should be fine.",
 
 "scene Home",
 "show j Normal right fadeIn",
@@ -711,9 +716,9 @@
 "Middle of Day - I look for the best place where I could find fish and dove underwater with my visor and harpoon to get some fishes.",
 
 "scene Fishing-Blood",
-"As I was underwater some friends of the person that I told about to the soldier arrive. They saw me fishing underwater. I didn't see them approach me. They took my life in cold as revange and this is where my life ends.",
+"As I was underwater some friends of the person that I told about to the soldier arrive. They saw me fishing underwater. I didn't see them approach me. They took my life in cold blood as revange and this is where my life ends.",
 
-"scene Red",
+"scene Fin-Red",
 "The end"
 
 ],
@@ -759,7 +764,7 @@
 
 "scene River",
 "show j Normal right fadeIn",
-" ARIEL left JAVIER alone while he went to work, JAVIER run out of food by the middle of the day. At this point he decided to go fishing.",
+" ARIEL left JAVIER alone while he went to work, JAVIER ran out of food by the middle of the day. At this point he decided to go fishing.",
 
 "scene Fishing",
 "show j Normal right fadeIn",
@@ -769,13 +774,13 @@
 "5:30 PM -  “The shadows then started reaching my house which was the sign that it was close to night”",
 
 "scene Home",
-"“I then went to the forest nearby and cut some wood so that I would have some fire in the night so I could make dinner and have light.”",
+"“I then went to the forest nearby and cut some wood, so that I would have some fire in the night, so I could make dinner and have light.”",
 
 "scene Fire",
 "After I got home with the wood I made a fire and ate, I then waited for my cousin for a few hours, but no sign of him.",
 
 "scene Home",
-"At about 9:00 PM I heard wolves howling in the distance this made me uncomfortable because I didn’t want to them to get near my house. I then turned off the fire and headed to my room and started a fire in there and let it burn until I went to sleep",
+"At about 9:00 PM, I heard wolves howling in the distance this made me uncomfortable because I didn’t want to them to get near my house. I then turned off the fire and headed to my room and started a fire in there and let it burn until I went to sleep",
 
 "scene Home",
 "show j Normal left fadeIn",
@@ -801,23 +806,23 @@
 "Trip": [
   "scene Home",
   "show l Normal right fadeIn",
-  "l Ok, so I talk to your parents they told me they will be able to bring you to the U.S within the next months.",
+  "l Ok, so I talk to your parents they told me they will be able to bring you to the u.s within the next months.",
 
   "scene Home",
   "show j Normal left fadeIn",
-  "j Ok, when I go grandma I will really miss you, I am thankful for having you taken care of me while parents are in the United States. I will never forget you and hopefully, when I do go, I want to be able to come back one day and visit you.",
+  "j Ok, when I go grandma, I will really miss you, I am thankful for having you taken care of me while my parents are in the United States. I will never forget you and hopefully, when I do go, I want to be able to come back one day and visit you.",
 
   "scene Home",
   "show l Normal right fadeIn",
-  "At this moment, my grandmother started crying and said she will miss me as well and it so sad that we had to separate and will probability never be able to see each other again.",
+  "At this moment, my grandmother started crying and said she will miss me as well and it so sad that we had to separate and will probably never be able to see each other again.",
 
   "scene Home",
   "show l Normal right fadeIn",
-  "This of course made even more sad about leaving the United States, but I knew that I had to if I wanted me and my family to have a better future.",
+  "Of course this, made even more sad about leaving to go to the United States, but I knew that I had to if I wanted to see my family and have a better future.",
 
   "scene Home",
-  "show j Normal right fadeIn",
-  "I don't want to go and I don't want to leave you here.",
+  "show j Mad right fadeIn",
+  "j I don't want to go and I don't want to leave you here.",
 
   "scene Home",
   "show j Normal right fadeIn",
@@ -829,11 +834,11 @@
 
   "scene Home",
   "show sa Normal right fadeIn",
-  "sa Javier your parents send me to take you to the city, they have finish arranging your trip to the U.S. Say goodbye to your grandma and get one pair of clothest because we are leaving as soon as you ready.",
+  " Javier your parents send me to take you to the city, they have finished arranging your trip to the u.s, Say goodbye to your grandma and get one pair of clothes because we are leaving as soon as you ready.",
 
   "scene Home",
   "show j Normal right fadeIn",
-  "j At this moment, I didn't know what to think even thought I was warned at ahead of time, when the decision to leave was right there in front of me so many thoughts came into my head.",
+  "j At this moment, I didn't know what to think even thought I was warned ahead of time, when the decision to leave was right there in front of me so many thoughts came into my head.",
 
   "scene Home",
   "show j normal right fadeIn",
@@ -841,39 +846,43 @@
 
   "scene Home",
   "show Sa normal right fadeIn",
-  "Sa It not your choice, your parents had to work continuosly for 6 years and have save all their money in order to bring you to the United States. And you are not going to waste all the effort they have put to bring you to the United States.",
+  "It not your choice, your parents had to work continuosly for 6 years and have save all their money in order to bring you to the United States. And you are not going to waste all their efforts they have put to bring you to the United States.",
 
   "scene Home",
   "show Sa normal right fadeIn",
-  "Sa You have an opportunity that many here wish they had and if they had they would take it in a heart beat, now take it.",
+  "You have an opportunity, that many here wish they had and if they did, they would take it in a heart beat, now take it.",
 
   "scene Home",
-  "show j normal left fadeIn",
-  "Reluctantly I went to my room and put on my best clothest because they told to not bring anything except what I was wearing and my wallet. I said goodbye to my grandmother she started crying because she knew I would never see her again. This made me start crying too",
+  "show j Sad left fadeIn",
+  "Reluctantly, I went to my room and put on my best clothes because they told to not bring anything else, except what I was wearing and my wallet. I said goodbye to my grandmother she started crying, because she knew I would never see her again. This made me start crying too",
 
   "scene Home",
-  "show j normal right fadeIn",
-  "j I hug her and said goodbye. I wanted to say goodbye to my cousin as well, but unfortunately at that moment he wansn't there. I started to walk on my way out of the house my eyes shading tears.One of my cats started following my meowing for about half a mile. I grab it and say goodbye this made me extremely sad because I knew I was leaving everything care for behind only taking my closest and my wallet. At the same I knew I would soon be able to see my parents in the United States.",
+  "show j Sad right fadeIn",
+  "j I hug her and said goodbye. I wanted to say goodbye to my cousin as well, but unfortunately at that moment he wansn't there. I started to walk on my way out of the house my eyes shading tears.",
+
+  "scene Home-Noon",
+  "show j Sad right fadeIn",
+  "j One of my cats started following me meowing for about half a mile. I grab it and say goodbye this made me extremely sad, because I knew I was leaving everything I care for behind, only taking my clothes and my wallet. At the same time, I knew I would soon be able to see my parents in the United States.",
 
   "scene Blackscreen",
-  "show j normal right fadeIn",
-  "At this point in my story I became an observer of my own story the reason being because I lost the available to make choices. All choice until I meet my parents had already been made for me.",
+  "show j Sad right fadeIn",
+  "At this point in my story, I became an observer of my own story, the reason being because I lost the available to make choices. All choice until I meet my parents had already been made for me.",
 
   "scene Grandma Home",
   "show j normal right fadeIn",
-  "j That night I slept at my grandma Sabrina house, it was a sad and lonely night for me.",
+  "j That night, I slept at my grandma, Sabrina house, it was a sad and lonely night for me.",
 
   "scene City",
   "show j normal right fadeIn",
-  "j The next day we got in car and made our way to the city of El Lazaro Cardenas where my Aunt live with her husband who would help me get to the border.",
+  "j The next day, we got in car and made our way to the city of El Lazaro Cardenas, where my Aunt lived with her husband who would help me get to the border.",
 
   "scene Aunt Home",
   "show j normal right fadeIn",
-  "We got to El Lazaro Cardenas the next day in the morning.",
+  "We got to El Lazaro Cardenas, the next day in the morning.",
 
   "scene Aunt Home",
   "show j right fadeIn",
-  "We ate at my Aunt because I hadn’t eating almost the whole ride, my grandmother told me eat because this might be my best meal in a while. I took her advice and ate as best I could, because i knew she was right.",
+  "We ate at my aunt, because I hadn’t eating almost the whole ride, my grandmother told me eat because this might be my best meal in a while. I took her advice and ate as best I could, because i knew she was right.",
 
   "scene Aunt Home",
   "show j normal right fadeIn",
@@ -890,7 +899,7 @@
 
 "scene Tijuana",
 "show j normal right fadeIn",
-"I calm down and got on the airplane. It took only a few hours for us to land in Tijuana.",
+"I calm down, and got on the airplane. It took only a few hours for us to land in Tijuana.",
 
 "scene Tijuana",
 "show j normal right fadeIn",
@@ -898,27 +907,32 @@
 
 "scene Tijuana",
 "show j normal right fadeIn",
-"Then we went to meet this person who parents had arrange to help me get across the border. We meet the Coyote who was a women at this moment I was very uneasy because I know that there are many Coyotes who very untrustworthy and will just leave anywhere as long as they get the money.",
+"Then we went to meet this person who my parents had arrange to help me get across the border. We meet the Coyote who was a women at this moment, I was very uneasy because I know that there are many coyotes who very untrustworthy and will just leave anywhere as long as they get the money.",
 
 "scene Tijuana",
 "show Un normal right fadeIn",
-"Ok, good luck I will be going back to El Lazaro Cardenas I will leave with this lady she will help you get you across the border.",
+"Ok, good luck, I will be going back to El Lazaro Cardenas I will leave you with this lady she will help you get you across the border.",
 
 "scene Tijuana",
 "show j normal right fadeIn",
-"At this moment I felt alone and lost because the only person that I knew a little bit left me alone with a complete stranger who I never seen before. I knew couldn’t complain so I stay with her, she took to her house where I slept on the floor for the night.",
+"At this moment, I felt alone and lost because the only person that I knew a little bit left me alone with a complete stranger who I never seen before. I knew couldn’t complain so I stay with her, she took to me to her house where I slept on the floor for the night.",
 
 "scene Tijuana",
 "show j normal right fadeIn",
-"The next day I got early in the morning and she got me in a car, then we reach the border. At the moment she took me out of the car and told me to not speak, she talk to the guard and then got me through to the other side.",
+"The next day, I got early in the morning and she got me in a car, then we reach the border. At the moment she took me out of the car and told me to not speak, she talk to the guard and then got me through to the other side.",
 
 "scene AZ-H",
 "show j normal right fadeIn",
-"She drove all the way to phoenix arizona and drop me off at another Coyote home.",
+"She drove all the way to phoenix arizona and drop me off at another coyote home.",
 
 "scene AZ-H",
 "show j normal left fadeIn",
 "This person made me very unseasy the reason being that she way very mean and require me to learn one word of English before we could leave to the next place. That word was “I am a U.S Citizen”. It was the first word of English I have heard and I couldn’t say it. I struggled the whole day to try sad it right. Until I got it the best I could in the afternoon.",
+
+"scene AZ-H",
+"show j normal left fadeIn",
+"The reason I had to learn this word, was because we still had to get pass another check point so that we could be in the clear.",
+
 
 "scene AZ-H",
 "show j normal fadeIn",
@@ -926,23 +940,23 @@
 
 "scene AZ-H",
 "show j normal right fadeIn",
-"Later as it was getting dark we arrive at a house were there a lot of other people who were making there trip to the United States too. This house was very dark inside and completely shut off from the outside. We were not allow to get close to the window or make much sound.",
+"Later, as it was getting dark we arrive at a house where there were a lot of other people who were making there trip to the United States too. This house was very dark inside and completely shut off from the outside. We were not allow to get close to the window or make much sound.",
 
 "scene AZ-H",
 "show j normal right fadeIn",
-"In this house I stayed for about 2 day without eating or talking to Coyote in charge of this part of the trip.",
+"In this house, I stayed for about 2 day without eating or talking to the coyote in charge of this part of the trip.",
 
 "scene AZ-H-V",
 "show j normal right fadeIn",
-"He then brought a van to the house and told about 12 people to get into when it clearly could only fit 6-7 people. We all got in there very cramp together that it hurt just be roll in there into aball.",
+"He, then brought a van to the house and told about 12 people to get into when clearly he could only fit 6-7 people. We all got in there very cramp together, that it hurt just be roll in there into a ball.",
 
 "scene Road",
 "show j normal right fadeIn",
-"About 4 hours into the trip he asked me what Washington I was going to if Washington D.C or just Washington. At this moment I feel very uneasy because he told if I don’t know he will return back and leave me there. This made me mad and just show me that this guy only care about one thing and that was money, but I remember that when I talk to my father he mention Seattle which I knew was a city of washington state where we were heading too.",
+"About 4 hours into the trip, he asked me what Washington I was going to, if Washington D.C or just Washington. At this moment I feel very uneasy because he told me, if I don’t know he will return back and leave me there. This made me mad and just show me that this guy only care about one thing and that was money, but I remember that when I talk to my father he mention Seattle which I knew was a city of washington state where we were heading too.",
 
 "scene Road",
 "show j normal right fadeIn",
-"This answer his question which made he happy I was soon going to see my parent in the United States. ",
+"This answer his question which made he happy, I was soon going to see my parent in the United States. ",
 
 "scene Saars",
 "show j normal right fadeIn",
@@ -950,7 +964,9 @@
 
 "scene Saars",
 "show j normal right fadeIn",
-"They both run towards when they saw us and we did the same time.  After we got into my father car and headed to our new home in the U.S."
+"They both run towards when they saw us and we did the same time.  After we got into my father car and headed to our new home in the U.S.",
+
+"scene Fin-Blue"
 
 ],
 
